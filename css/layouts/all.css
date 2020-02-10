@@ -404,11 +404,10 @@ a.pure-button-primary {
             flex-direction: column;
     background-color: #203558;
     width: 100%;
-    top: -100%;
+    top: 80px;
+    left: -100%;
     height: calc(100vh - 80px);
     padding: 50px;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
     opacity: 0;
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
@@ -429,8 +428,7 @@ a.pure-button-primary {
   .header.active .pure-menu-list {
     opacity: 1;
     top: 80px;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    left: 0;
   }
   .pure-g {
     display: -ms-grid;

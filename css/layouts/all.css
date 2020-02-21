@@ -159,10 +159,12 @@ a.pure-button-primary {
   height: 50%;
   margin: auto;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   bottom: 0;
   right: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
   text-transform: uppercase;
 }
@@ -524,6 +526,7 @@ hr {
     font-size: 16px;
   }
   .cover img {
+    height: 100%;
     margin-left: -800px;
   }
 }

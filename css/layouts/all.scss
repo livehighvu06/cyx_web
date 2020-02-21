@@ -58,18 +58,14 @@ hr{
     }
 }
 .cover{
-    // background: url(../../img/cover.jpeg) no-repeat no-repeat;
-    transform: translate3d(0px, 0px, 0px);
+    // transform: translate3d(0px, 0px, 0px);
+    overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    // width: 100%;
     z-index: -1;
-    // background-position: center center;
-    // background-size: cover;
-    // background-attachment: fixed;
 }
 #about{
     background-color: #203558;
@@ -119,6 +115,6 @@ hr{
     }
     .cover img{
         left: 50%;
-        margin-left: -500px;
+        margin-left: -650px;
     }
 }

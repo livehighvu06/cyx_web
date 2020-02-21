@@ -454,8 +454,7 @@ hr {
 }
 
 .cover {
-  -webkit-transform: translate3d(0px, 0px, 0px);
-          transform: translate3d(0px, 0px, 0px);
+  overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -516,7 +515,7 @@ hr {
   }
   .cover img {
     left: 50%;
-    margin-left: -500px;
+    margin-left: -650px;
   }
 }
 /*# sourceMappingURL=all.css.map */

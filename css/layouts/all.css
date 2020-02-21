@@ -462,8 +462,10 @@ hr {
   background-attachment: fixed;
   background-size: cover;
   width: 1920px;
-  height: 1080px;
+  height: 100vh;
   z-index: -11;
+  top: 0;
+  bottom: 0;
 }
 
 #about {
@@ -533,7 +535,6 @@ hr {
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    height: auto;
   }
 }
 /*# sourceMappingURL=all.css.map */

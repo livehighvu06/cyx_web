@@ -61,15 +61,13 @@ hr{
     position: fixed;
     background: url(../../img/cover.jpeg);
     background-repeat: no-repeat;
-    background-position: center;
-
+    background-position: center ;
     width: 100%;
     background-size:cover;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
     z-index: -11;
+    top: 0;
+    bottom: 0;
+
 }
 #about{
     background-color: #203558;
@@ -124,7 +122,10 @@ hr{
             }
         }
     }
-    .cover img{
-        margin-left: -800px;
+    .cover{
+       
     }
+    // .cover img{
+    //     margin-left: -800px;
+    // }
 }

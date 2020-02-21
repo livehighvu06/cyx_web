@@ -64,9 +64,9 @@ hr{
     background-position: center ;
     background-attachment: fixed;
     background-size:cover;
-    max-width: 1920px;
     width: 100%;
-    height: auto;
+    height: 0;
+    padding-bottom: 100vh;
     z-index: -11;
     top: 0;
     bottom: 0;
@@ -126,12 +126,12 @@ hr{
     }
 }
 @media screen and (max-width:426px){
-    // .cover{
-    //     background: url(../../img/cover-sm.jpg);
-    //     background-repeat: no-repeat;
-    //     background-position: center ;
-    //     background-attachment: fixed;
-    //     background-size:cover;
-    //     width: 100%;
-    //  }
+    .cover{
+        background: url(../../img/cover-sm.jpg);
+        background-repeat: no-repeat;
+        background-position: center ;
+        background-attachment: fixed;
+        background-size:cover;
+        width: 100% ;
+     }
 }

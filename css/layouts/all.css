@@ -506,7 +506,13 @@ hr {
     width: 100%;
   }
   .splash .splash-head {
-    font-size: 60px;
+    font-size: 40px;
+  }
+  .splash .splash-subhead {
+    font-size: 16px;
+  }
+  .pure-u-1 {
+    font-size: 16px;
   }
   .pure-g {
     display: -ms-grid;

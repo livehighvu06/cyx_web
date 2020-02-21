@@ -455,7 +455,7 @@ hr {
 }
 
 .cover {
-  position: absolute;
+  position: relative;
   background: url(../../img/cover.jpeg);
   background-repeat: no-repeat;
   background-position: center;
@@ -464,8 +464,6 @@ hr {
   width: 1920px;
   height: 1080px;
   z-index: -11;
-  top: 0;
-  bottom: 0;
 }
 
 #about {

@@ -121,12 +121,12 @@ hr{
         }
     }
 }
-// @media screen and (max-width:426px){
-//     .cover{
-//         background: url(../../img/cover-sm.jpg);
-//         background-repeat: no-repeat;
-//         background-position: center ;
-//         background-attachment: fixed;
-//         background-size:450px 850px;
-//      }
-// }
+@media screen and (max-width:426px){
+    .splash-container{
+        // background: url(../../img/cover-sm.jpg);
+        // background-repeat: no-repeat;
+        // background-position: center ;
+        // background-attachment: fixed;
+        background-size:450px 850px;
+     }
+}

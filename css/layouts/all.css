@@ -457,6 +457,7 @@ hr {
   z-index: -2;
   background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #about {

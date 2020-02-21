@@ -65,7 +65,9 @@ hr{
     z-index: -2;
     background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
+    // background-attachment: fixed;
+    top: 0;
+    left: 0;
 }
 // .cover img{
 //     width: 100%;

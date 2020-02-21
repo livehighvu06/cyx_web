@@ -137,6 +137,8 @@ a.pure-button-primary {
  */
 
 .splash-container {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#02457a), to(#fff));
+    background-image: -o-linear-gradient(#02457a, #fff);
     background-image: linear-gradient(#02457a, #fff);
     background-attachment: fixed;
     overflow: hidden;

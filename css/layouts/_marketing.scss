@@ -28,6 +28,12 @@ label {
     max-width: 100%;
     height: auto;
 }
+img{
+    max-width: 100%;
+    width: 100%;
+    // height: auto;
+    min-width:1600px;
+}
 // .image-container {
 //     max-width: 100%;
 //     height: auto;
@@ -239,7 +245,6 @@ a.pure-button-primary {
     background: #111;
     bottom: 0;
     width: 100%;
-    // position: fixed;
 }
 
 /*

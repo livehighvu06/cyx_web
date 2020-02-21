@@ -58,14 +58,18 @@ hr{
     }
 }
 .cover{
-    background: url(../../img/cover.jpeg) no-repeat no-repeat;
+    // background: url(../../img/cover.jpeg) no-repeat no-repeat;
+    transform: translate3d(0px, 0px, 0px);
     position: fixed;
-    width: 100%;
-    height: 1675px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    // width: 100%;
     z-index: -1;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
+    // background-position: center center;
+    // background-size: cover;
+    // background-attachment: fixed;
 }
 #about{
     background-color: #203558;
@@ -113,8 +117,8 @@ hr{
             }
         }
     }
-    .cover{
-        height: auto;
-        min-height: 500px;
+    .cover img{
+        left: 80%;
+        margin-left: -650px;
     }
 }

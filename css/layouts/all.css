@@ -29,10 +29,8 @@ label {
 }
 
 img {
-  max-width: 100%;
-  min-width: 1600px;
-  width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 /*
@@ -461,6 +459,11 @@ hr {
 
 .cover {
   position: fixed;
+  background: url(../../img/cover.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  background-size: cover;
   top: 0;
   left: 0;
   bottom: 0;
@@ -526,7 +529,6 @@ hr {
     font-size: 16px;
   }
   .cover img {
-    height: 100%;
     margin-left: -800px;
   }
 }

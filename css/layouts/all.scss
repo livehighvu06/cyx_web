@@ -58,8 +58,13 @@ hr{
     }
 }
 .cover{
-    // overflow: hidden;
     position: fixed;
+    background: url(../../img/cover.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 100%;
+    background-size:cover;
     top: 0;
     left: 0;
     bottom: 0;
@@ -120,7 +125,6 @@ hr{
         }
     }
     .cover img{
-        height: 100%;
         margin-left: -800px;
     }
 }

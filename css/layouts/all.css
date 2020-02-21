@@ -33,7 +33,9 @@ label {
  * These are some useful classes which I will need
  */
 .l-box {
-  padding: 1em;
+  padding: .5em;
+  margin-top: 0.5em;
+  margin-bottom: .5em;
 }
 
 .l-box-lrg {
@@ -78,8 +80,12 @@ label {
 a.pure-button-primary {
   background: white;
   color: #1f8dd6;
-  border-radius: 5px;
+  border-radius: 300px;
   font-size: 120%;
+  letter-spacing: 1px;
+  font-weight: 700;
+  line-height: 1.6;
+  text-transform: uppercase;
 }
 
 /*
@@ -94,7 +100,7 @@ a.pure-button-primary {
 }
 
 .home-menu {
-  background: #2d3e50;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .pure-menu.pure-menu-fixed {
@@ -130,15 +136,16 @@ a.pure-button-primary {
  * This is the blue top section that appears on the page.
  */
 .splash-container {
-  background: #1f8dd6;
-  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
   overflow: hidden;
   /* The following styles are required for the "scroll-over" effect */
   width: 100%;
-  height: 88%;
+  height: 100%;
+  min-height: 100vh;
   top: 0;
   left: 0;
-  position: fixed !important;
+  position: relative;
 }
 
 .splash {
@@ -147,7 +154,7 @@ a.pure-button-primary {
   height: 50%;
   margin: auto;
   position: absolute;
-  top: 100px;
+  top: 0;
   left: 0;
   bottom: 0;
   right: 0;
@@ -157,14 +164,10 @@ a.pure-button-primary {
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  border: 3px solid white;
-  padding: 1em 1.6em;
-  font-weight: 100;
-  border-radius: 5px;
-  line-height: 1em;
+  text-transform: uppercase;
+  font-size: 80px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  color: #fff;
 }
 
 /* This is the subheading that appears on the blue section */
@@ -180,25 +183,26 @@ a.pure-button-primary {
  */
 .content-wrapper {
   /* These styles are required for the "scroll-over" effect */
-  position: absolute;
-  top: 87%;
+  position: relative;
   width: 100%;
-  min-height: 12%;
   z-index: 2;
   background: white;
 }
 
 /* We want to give the content area some more padding */
 .content {
-  padding: 1em 1em 3em;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /* This is the class used for the main content headers (<h2>) */
 .content-head {
-  font-weight: 400;
+  font-weight: 700;
+  font-size: 40px;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin: 3em 0 1em;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  margin: 1em 0 1em;
 }
 
 /* This is a modifier class used when the content-head is inside a ribbon */
@@ -224,7 +228,6 @@ a.pure-button-primary {
 /* This is the class used for the footer */
 .footer {
   background: #111;
-  position: fixed;
   bottom: 0;
   width: 100%;
 }
@@ -257,9 +260,6 @@ a.pure-button-primary {
     width: 50%;
     height: 50%;
   }
-  .splash-head {
-    font-size: 250%;
-  }
   /* We remove the border-separator assigned to .l-box-lrg */
   .l-box-lrg {
     border: none;
@@ -271,19 +271,122 @@ a.pure-button-primary {
  * On desktops and other large devices, we want to over-ride some
  * of the mobile and tablet styles.
  */
-@media (min-width: 78em) {
-  /* We increase the header font size even more */
-  .splash-head {
-    font-size: 300%;
-  }
+/*
+ * -- PRICING TABLE WRAPPER --
+ * This element wraps up all the pricing table elements
+ */
+.pricing-tables,
+.information {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.pricing-tables {
+  margin-bottom: 3.125em;
+  text-align: center;
+}
+
+/*
+ * -- PRICING TABLE  --
+ * Every pricing table has the .pricing-table class
+ */
+.pricing-table {
+  border: 1px solid #ddd;
+  margin: 0 0.5em 2em;
+  padding: 0 0 3em;
+}
+
+/*
+ * -- PRICING TABLE HEADER COLORS --
+ * Choose a different color based on the type of pricing table.
+ */
+.pricing-table-free .pricing-table-header {
+  background: #519251;
+}
+
+.pricing-table-biz .pricing-table-header {
+  background: #2c4985;
+}
+
+/*
+ * -- PRICING TABLE HEADER --
+ * By default, a header is black/white, and has some styles for its <h2> name.
+ */
+.pricing-table-header {
+  background: #111;
+  color: #fff;
+}
+
+.pricing-table-header h2 {
+  margin: 0;
+  padding-top: 2em;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/*
+ * -- PRICING TABLE PRICE --
+ * Styles for the price and the corresponding <span>per month</span>
+ */
+.pricing-table-price {
+  font-size: 6em;
+  margin: 0.2em 0 0;
+  font-weight: 100;
+}
+
+.pricing-table-price span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.2em;
+  padding-bottom: 2em;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  *color: #fff;
+}
+
+/*
+ * -- PRICING TABLE LIST --
+ * Each pricing table has a <ul> which is denoted by the .pricing-table-list class
+ */
+.pricing-table-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/*
+ * -- PRICING TABLE LIST ELEMENTS --
+ * Styles for the individual list elements within each pricing table
+ */
+.pricing-table-list li {
+  padding: 0.8em 0;
+  background: #f7f7f7;
+  border-bottom: 1px solid #e7e7e7;
 }
 
 * {
   scroll-behavior: smooth;
+  font-family: "Noto Sans TC";
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: 0;
+  height: 4px;
+  background-color: #203558;
+  width: 50px;
+  margin: 30px auto;
 }
 
 .header {
-  position: relative;
+  position: fixed;
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,7 +408,6 @@ a.pure-button-primary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* hamburger toggle */
 }
 
 .header .home-menu .name {
@@ -314,24 +416,6 @@ a.pure-button-primary {
   font-weight: 400;
   font-size: 120%;
   text-decoration: none;
-}
-
-.header .home-menu .hamburger {
-  display: none;
-}
-
-.header .home-menu .hamburger:hover {
-  cursor: pointer;
-}
-
-.header .home-menu .hamburger .line {
-  width: 30px;
-  height: 2px;
-  background-color: #ecf0f1;
-  display: block;
-  margin: 8px 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 
 .header .home-menu .pure-menu-list {
@@ -365,85 +449,64 @@ a.pure-button-primary {
   color: #fff;
 }
 
-.splash-container {
-  position: relative;
+.cover {
+  background: url(../../img/cover.jpeg) no-repeat;
+  background-size: cover;
+  width: 100%;
   height: 100%;
+  position: fixed;
+  z-index: -1;
 }
 
-.content-wrapper {
-  top: 100%;
+#about {
+  background-color: #203558;
+  color: #fff;
+  min-height: 700px;
 }
 
-.header.active .hamburger .line:nth-child(2) {
-  opacity: 0;
+#about h2 {
+  color: #fff;
 }
 
-.header.active .hamburger .line:nth-child(1) {
-  -webkit-transform: translateY(10px) rotate(45deg);
-  transform: translateY(10px) rotate(45deg);
+#about hr {
+  background-color: #fff;
 }
 
-.header.active .hamburger .line:nth-child(3) {
-  -webkit-transform: translateY(-10px) rotate(-45deg);
-  transform: translateY(-10px) rotate(-45deg);
+.fas {
+  font-size: 60px;
+}
+
+.footer.l-box {
+  margin: 0;
 }
 
 @media screen and (max-width: 767px) {
   .header .home-menu {
     padding: 0 50px;
   }
-  .header .home-menu .hamburger {
-    display: inline-block;
-    position: relative;
-  }
-  .header .home-menu .pure-menu-list {
-    position: absolute;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-color: #203558;
-    width: 100%;
-    top: 80px;
-    left: -100%;
-    height: calc(100vh - 80px);
-    padding: 50px;
-    opacity: 0;
-    -webkit-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-  }
-  .header .home-menu .pure-menu-list li {
-    padding: 40px 0;
-    width: 100%;
-    border-bottom: 1px solid #aaa;
-  }
-  .header .home-menu .pure-menu-list li a {
-    font-size: 1.2rem;
-    font-weight: 900;
-    color: #fff;
-  }
-  .header .home-menu .pure-menu-list li:nth-child(3) {
-    border: none;
-  }
-  .header.active .pure-menu-list {
-    opacity: 1;
-    top: 80px;
-    left: 0;
-  }
-  .pure-g {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+  .l-box ul li {
+    font-size: 16px;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 569px) {
+  .header .home-menu .pure-menu-list {
+    display: none;
+  }
+  .splash {
+    width: 100%;
+  }
+  .splash .splash-head {
+    font-size: 60px;
+  }
   .pure-g {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .pure-g .l-box ul li {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=all.css.map */

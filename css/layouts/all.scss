@@ -58,16 +58,18 @@ hr{
     }
 }
 .cover{
-    position: fixed;
+    // position: fixed;
+    position: absolute;
     background: url(../../img/cover.jpeg);
     background-repeat: no-repeat;
     background-position: center ;
-    width: 100%;
-    height: auto;
+    background-attachment: fixed;
     background-size:cover;
+    width: 100%;
+    min-height: 100vh; 
     z-index: -11;
-    top: 0;
-    bottom: 0;
+    // top: 0;
+    // bottom: 0;
 }
 #about{
     background-color: #203558;

@@ -58,7 +58,7 @@ hr{
     }
 }
 .cover{
-    overflow: hidden;
+    // overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
@@ -120,7 +120,6 @@ hr{
         }
     }
     .cover img{
-        // height: 100%;
         margin-left: -800px;
     }
 }

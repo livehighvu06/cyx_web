@@ -137,7 +137,8 @@ a.pure-button-primary {
  */
 
 .splash-container {
-    background-color: rgba(0,0,0,.3);
+    background-image: linear-gradient(#02457a, #fff);
+    background-attachment: fixed;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
     width: 100%;

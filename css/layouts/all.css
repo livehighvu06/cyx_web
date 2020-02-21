@@ -526,6 +526,7 @@ hr {
     font-size: 16px;
   }
   .cover img {
+    height: 100%;
     margin-left: -800px;
   }
 }

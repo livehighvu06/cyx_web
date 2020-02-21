@@ -534,8 +534,7 @@ hr {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
+    background-size: 400px 700px;
   }
 }
 /*# sourceMappingURL=all.css.map */

@@ -559,7 +559,7 @@ hr {
 
 @media only screen and (max-width: 426px) {
   .cover {
-    background-size: contain;
+    background-size: 400px 600px;
   }
 }
 /*# sourceMappingURL=all.css.map */

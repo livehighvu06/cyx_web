@@ -559,8 +559,7 @@ hr {
 
 @media only screen and (max-width: 426px) {
   .cover {
-    background-image: url(../../img/cover_mobile.jpg);
-    background-size: 50% 50%;
+    background-size: contain;
   }
 }
 /*# sourceMappingURL=all.css.map */

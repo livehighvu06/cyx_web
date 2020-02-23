@@ -560,8 +560,9 @@ hr {
 @media only screen and (max-width: 426px) {
   .cover {
     background-image: url(../../img/IMG_4465.JPG);
+    background-position: unset;
     height: auto;
-    min-height: 200px;
+    min-height: 100vh;
   }
 }
 /*# sourceMappingURL=all.css.map */

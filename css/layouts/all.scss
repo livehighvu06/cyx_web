@@ -2,8 +2,10 @@
 
 
 /* 通用區 */
-html{
+html,body{
     height: 100%;
+}
+html{
     scroll-behavior: smooth;
 }
 body{
@@ -26,6 +28,7 @@ hr{
 .wrap{
     max-width: 1440px;
     margin: auto;
+    height: 100%;
 }
 /* header */
 .header{

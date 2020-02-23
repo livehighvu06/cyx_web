@@ -9,6 +9,15 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans TC', ; 
+
+    background-image:url(../../img/cover.jpg) ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 ul{
     list-style: none;
@@ -73,18 +82,7 @@ hr{
     }
 }
 .cover{
-    position: relative;
-    z-index: -11;
-    background-image:url(../../img/cover.jpg) ;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    width: 100%;
-    min-height: 650px;
+ 
 }
 /* content-wrapper */
 #about{

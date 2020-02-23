@@ -137,10 +137,14 @@ a.pure-button-primary {
  * This is the blue top section that appears on the page.
  */
 .splash-container {
+  position: relative;
+  background-image: url(../../img/cover.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
   /* The following styles are required for the "scroll-over" effect */
   width: 100%;
-  min-height: 100vh;
-  position: relative;
+  height: 100vh;
 }
 
 .splash {

@@ -165,7 +165,6 @@ a.pure-button-primary {
 .splash {
   /* absolute center .splash within .splash-container */
   width: 80%;
-  height: 50%;
   margin: auto;
   position: absolute;
   top: 50%;
@@ -554,6 +553,13 @@ hr {
   }
   .pure-g .l-box ul li {
     font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  body {
+    background-image: url(../../img/IMG_4465.JPG);
+    background-size: 100% 100%;
   }
 }
 /*# sourceMappingURL=all.css.map */

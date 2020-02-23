@@ -148,10 +148,10 @@ hr{
         }
     }
 }
-// @media only screen and (max-width:426px){
-//        .cover{
-//         // background-position: unset;
-//         background-image: url(../../img/cover-sm.jpg);
-//         background-size: contain;
-//        }
-// }
+@media only screen and (max-width:426px){
+       body{
+        // background-position: unset;
+        background-image: url(../../img/IMG_4465.JPG);
+        background-size: 100% 100%;
+       }
+}

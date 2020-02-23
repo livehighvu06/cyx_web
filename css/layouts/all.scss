@@ -144,8 +144,9 @@ hr{
         }
     }
 }
-// @media screen and (max-width:426px){
-//        .cover{
-//            background-image: url(../../img/cover_mobile.jpg);
-//        }
-// }
+@media only screen and (max-width:426px){
+       body{
+           background-image: url(../../img/cover_mobile.jpg);
+           background-size: auto 100%;
+       }
+}

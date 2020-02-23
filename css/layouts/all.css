@@ -558,4 +558,11 @@ hr {
     font-size: 16px;
   }
 }
+
+@media only screen and (max-width: 426px) {
+  body {
+    background-image: url(../../img/cover_mobile.jpg);
+    background-size: auto 100%;
+  }
+}
 /*# sourceMappingURL=all.css.map */

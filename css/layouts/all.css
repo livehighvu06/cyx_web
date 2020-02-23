@@ -486,8 +486,8 @@ hr {
   background-attachment: fixed;
   background-color: #000;
   background-size: cover;
-  width: 100%;
-  height: 100%;
+  height: 100vh;
+  min-height: 450px;
 }
 
 /* content-wrapper */
@@ -561,7 +561,7 @@ hr {
   .cover {
     background-image: url(../../img/IMG_4465.JPG);
     height: auto;
-    min-height: 500px;
+    min-height: 200px;
   }
 }
 /*# sourceMappingURL=all.css.map */

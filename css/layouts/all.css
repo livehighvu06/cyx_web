@@ -206,7 +206,6 @@ a.pure-button-primary {
   /* These styles are required for the "scroll-over" effect */
   position: relative;
   width: 100%;
-  z-index: 2;
   background: white;
 }
 
@@ -250,7 +249,6 @@ a.pure-button-primary {
 .footer {
   background: #111;
   position: relative;
-  z-index: 2;
   bottom: 0;
   width: 100%;
 }
@@ -562,7 +560,7 @@ hr {
 @media only screen and (max-width: 426px) {
   body {
     background-image: url(../../img/cover_mobile.jpg);
-    background-size: auto;
+    background-size: cover;
   }
 }
 /*# sourceMappingURL=all.css.map */

@@ -530,10 +530,8 @@ hr {
 }
 
 @media screen and (max-width: 426px) {
-  .cover .cover {
+  .cover {
     background-size: 450px;
-    width: 100%;
-    height: auto;
   }
 }
 /*# sourceMappingURL=all.css.map */

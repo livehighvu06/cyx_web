@@ -57,32 +57,8 @@ label {
   margin-bottom: .5em;
 }
 
-.l-box-lrg {
-  padding: 2em;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
 .is-center {
   text-align: center;
-}
-
-/*
- * -- PURE FORM STYLES --
- * Style the form inputs and labels
- */
-.pure-form label {
-  margin: 1em 0 0;
-  font-weight: bold;
-  font-size: 100%;
-}
-
-.pure-form input[type] {
-  border: 2px solid #ddd;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  font-size: 100%;
-  width: 100%;
-  margin-bottom: 1em;
 }
 
 /*
@@ -105,6 +81,7 @@ a.pure-button-primary {
   font-weight: 700;
   line-height: 1.6;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 /*
@@ -122,32 +99,8 @@ a.pure-button-primary {
   background: rgba(0, 0, 0, 0.4);
 }
 
-.pure-menu.pure-menu-fixed {
-  /* Fixed menus normally have a border at the bottom. */
-  border-bottom: none;
-  /* I need a higher z-index here because of the scroll-over effect. */
-  z-index: 4;
-}
-
-.home-menu .pure-menu-heading {
-  color: white;
-  font-weight: 400;
-  font-size: 120%;
-}
-
 .home-menu .pure-menu-selected a {
   color: white;
-}
-
-.home-menu a {
-  color: #6FBEF3;
-}
-
-.home-menu li a:hover,
-.home-menu li a:focus {
-  background: none;
-  border: none;
-  color: #AECFE5;
 }
 
 /*
@@ -219,11 +172,6 @@ a.pure-button-primary {
   margin: 1em 0 1em;
 }
 
-/* This is a modifier class used when the content-head is inside a ribbon */
-.content-head-ribbon {
-  color: white;
-}
-
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead {
   color: #1f8dd6;
@@ -231,12 +179,6 @@ a.pure-button-primary {
 
 .content-subhead i {
   margin-right: 7px;
-}
-
-/* This is the class used for the dark-background areas. */
-.ribbon {
-  background: #2d3e50;
-  color: #aaa;
 }
 
 /* This is the class used for the footer */
@@ -558,8 +500,7 @@ hr {
 
 @media only screen and (max-width: 426px) {
   body {
-    background-image: url(../../img/ultraman.jpg);
-    background-size: 100% 100%;
+    background-image: url(../../img/ultraman-sm.jpg);
   }
 }
 /*# sourceMappingURL=all.css.map */

@@ -560,7 +560,7 @@ hr {
 @media only screen and (max-width: 426px) {
   .cover {
     background-image: url(../../img/cover_mobile.jpg);
-    background-size: 100% 100%;
+    background-size: 100%;
   }
 }
 /*# sourceMappingURL=all.css.map */

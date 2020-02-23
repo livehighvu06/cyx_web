@@ -533,7 +533,7 @@ hr {
 
 @media screen and (max-width: 426px) {
   .cover {
-    background-image: url(../../img/cover-sm.jpg);
+    background-image: url(../../img/cover_mobile.jpg.jpg);
   }
 }
 /*# sourceMappingURL=all.css.map */

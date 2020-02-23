@@ -12,6 +12,16 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans TC', ; 
+
+    background-image:url(../../img/cover.jpg) ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 ul{
     list-style: none;
@@ -76,16 +86,7 @@ hr{
     }
 }
 .cover{  
-    background-image:url(../../img/cover.jpg) ;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
+   
 }
 /* content-wrapper */
 #about{

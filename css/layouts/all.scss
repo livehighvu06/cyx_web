@@ -96,6 +96,9 @@ hr{
     hr{
         background-color: #fff;
     }
+    p{
+        font-size: 16px;
+    }
 }
 .fas{
    font-size: 60px;
@@ -132,9 +135,7 @@ hr{
         font-size: 16px;
     }
     .pure-g{
-        display: grid;
-        grid-template-columns:1fr;
-        place-items: center;
+        flex-direction: column;
         .pure-u-1{
             width: 100%;
         }

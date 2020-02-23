@@ -33,8 +33,11 @@ label {
     justify-content: center;
     align-items: center;
 }
-.pure-u-lg-1-3{
-    width: 32.33%;
+.pure-u-1{
+    width: 33.33%;
+}
+.pure-g-col{
+    flex-direction: column;
 }
 /*
  * -- LAYOUT STYLES --
@@ -147,6 +150,7 @@ a.pure-button-primary {
 .splash-container {
     // overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
+    background-color: rgba(0,0,0,.3);
     position: relative;
     width: 100%;
     height: 100%;

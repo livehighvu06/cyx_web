@@ -11,14 +11,7 @@ html{
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans TC', ; 
-
-    // background:url(../../img/cover.jpg) center center no-repeat fixed ;
-    // background-color: #000;
-    // -webkit-background-size: cover;
-    // -moz-background-size: cover;
-    // -o-background-size: cover;
-    // background-size: cover;
+    font-family: 'Noto Sans TC', ;
 }
 .fas{
     font-size: 60px;
@@ -154,6 +147,7 @@ hr{
     img{
         width: 100%;
         height: auto;
+        min-height: 500px;
     }
     .pure-u-1{
         font-size: 16px;

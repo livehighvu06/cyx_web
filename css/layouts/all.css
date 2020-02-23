@@ -530,4 +530,16 @@ hr {
     font-size: 16px;
   }
 }
+
+@media screen and (max-width: 426px) {
+  .cover .cover {
+    position: relative;
+    background-image: url(../../img/cover.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -11;
+  }
+}
 /*# sourceMappingURL=all.css.map */

@@ -463,16 +463,6 @@ hr {
   color: #fff;
 }
 
-.cover {
-  position: relative;
-  background-image: url(../../img/cover.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-  height: 800px;
-  z-index: -11;
-}
-
 /* content-wrapper */
 #about {
   background-color: #203558;

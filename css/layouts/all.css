@@ -388,6 +388,12 @@ hr {
   margin: 30px auto;
 }
 
+.wrap {
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+}
+
 /* header */
 .header {
   position: fixed;
@@ -525,6 +531,12 @@ hr {
   }
   .pure-g .l-box ul li {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .splash-container {
+    background-size: 450px 850px;
   }
 }
 /*# sourceMappingURL=all.css.map */

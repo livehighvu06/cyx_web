@@ -20,6 +20,11 @@ hr{
     width: 50px;
     margin: 30px auto;
 }
+.wrap{
+    position: relative;
+    max-width: 1440px;
+    margin: auto;
+}
 /* header */
 .header{
     position: fixed;
@@ -130,8 +135,8 @@ hr{
         }
     }
 }
-// @media screen and (max-width:426px){
-//     .splash-container{
-//         background-size:450px 850px;
-//      }
-// }
+@media screen and (max-width:426px){
+    .splash-container{
+        background-size:450px 850px;
+     }
+}

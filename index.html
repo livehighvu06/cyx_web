@@ -8,6 +8,8 @@
     <!-- custom -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <script src="https://kit.fontawesome.com/9a416a1cca.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/parallax.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/layouts/all.css">
 </head>
@@ -24,13 +26,13 @@
     </div>
 </div>
 <div class="wrap">
-    <div class="splash-container">
-        <div class="cover cover-desktop">
-            <img src="./img/cover.jpg" alt="cover">
+    <div class="splash-container"  data-parallax="scroll" data-image-src="./img/cover.jpg" >
+        <!-- <div class="cover cover-desktop" >
+            <img src="./img/cover.jpg"alt="cover">
         </div>
         <div class="cover cover-mobile">
             <img src="./img/cover-sm.jpg" alt="cover-mobile">
-        </div>
+        </div> -->
         <div class="splash">
             <h1 class="splash-head">CYX</h1>
             <h1 class="splash-head">portfolio</h1>
@@ -116,9 +118,5 @@
         copyright © Chen Yi Xian. all rights reserved
     </div>
 </div>
-
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script type="text/javascript">
-    </script> -->
 </body>
 </html>
